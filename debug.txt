@@ -1,0 +1,9 @@
+report_summary: • Root Cause: Lubrication failure in the gearbox bearing due to oil contamination, evidenced by high metal particle count in the oil sample.
+
+• Mechanical Issue: Excessive wear detected on the high-speed shaft bearing in the gearbox, leading to high vibration levels and eventual shutdown.
+
+• Electrical Issue: Yaw motor showing 15% performance degradation, which could lead to further operational inefficiencies if not addressed.
+
+• Operational Impact: Unexpected shutdown caused a downtime of 6.5 hours and a power loss of approximately 18 MWh.
+
+• Recommended Action: Immediate replacement of the gearbox bearing, full oil flush and replacement, blade tip repair within 30 days, and yaw motor inspection within 7 days to prevent future incidents.
