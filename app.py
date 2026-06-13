@@ -92,7 +92,7 @@ with tab1:
     col1, col2, col3 = st.columns([1, 3, 1])
 
     with col2:
-        prompt = st.text_area("", height=120, placeholder="Paste the Equipment Logs...", label_visibility="collapsed")
+        prompt = st.text_area("Equipment Logs", height=120, placeholder="Paste the Equipment Logs...", label_visibility="collapsed")
         
         if st.button("Summarize"):
             if prompt:
