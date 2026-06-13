@@ -4,12 +4,16 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_aws import ChatBedrockConverse
 from langchain.memory import ConversationSummaryBufferMemory
 from langchain.prompts import PromptTemplate
+import streamlit as st
 
 def demo_chatbot():
     demo_llm = ChatBedrockConverse(
         model="amazon.nova-pro-v1:0",
         temperature=0.7,
-        max_tokens=1000
+        max_tokens=1000,
+        region_name=st.secrets.get("AWS_DEFAULT_REGION", "ap-south-1"),
+        aws_access_key_id=st.secrets.get("AWS_ACCESS_KEY_ID"),
+        aws_secret_access_key=st.secrets.get("AWS_SECRET_ACCESS_KEY")
     )
     return demo_llm
     
@@ -20,8 +24,8 @@ def demo_memory():
     return memory
 
 def demo_conversation(input_text, memory, demo_llm, report_summary=None):
-    with open("debug.txt", "w") as f:
-        f.write(f"report_summary: {report_summary}")
+    # with open("debug.txt", "w") as f:
+    #     f.write(f"report_summary: {report_summary}")
     prompt_template = """You are an expert Wind Turbine SME Assistant.
 
 You can:
