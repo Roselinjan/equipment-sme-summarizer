@@ -6,7 +6,7 @@ incident reports and get intelligent answers using
 Generative AI.
 
 ## 🔗 Live Demo
-https://equipment-sme-summarizer.streamlit.app
+https://equipment-sme-summarizer-4fcrhf6ekpaqyhge6qftxl.streamlit.app
 
 ## ✨ Features
 
