@@ -8,7 +8,7 @@ import streamlit as st
 
 def demo_chatbot():
     demo_llm = ChatBedrockConverse(
-        model="amazon.nova-pro-v1:0",
+        model="apac.amazon.nova-pro-v1:0",
         temperature=0.7,
         max_tokens=1000,
         region_name=st.secrets.get("AWS_DEFAULT_REGION", "ap-south-1"),
